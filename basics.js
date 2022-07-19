@@ -1,14 +1,21 @@
-console.log("hello my buddies!")
+const fruits = []
 
-console.log(typeof("What's this?"))
+fruits.push("apple");
+fruits.push("grape");
+fruits.push("peach");
 
-console.log(typeof(52))
+console.log(fruits);
 
-let sum = 1;
 
-console.log(sum)
+// quiero saber si pueden votar
 
-console.log(sum +1)
+// necesito la edad del participante
+// si es mayor de 18, puede votar, sino, no
 
-const firstName = "Jesús";
-console.log(firstName)
+let age = 14
+
+if (age >= 18) {
+  console.log("You can vote");
+} else {
+  console.log("Crece primero");
+}
