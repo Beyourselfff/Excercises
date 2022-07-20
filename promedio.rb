@@ -10,5 +10,18 @@
 # Estos números ingresados, deberían guardarse en un array
 # Como será en un array, deberemos hacer la suma de los números internos( maybe an each do sum=+ y luego dividirlo entre el length)
 
-puts "Please insert your number(s)"
-number  = gets.chomp
+#
+
+my_numbers = []
+
+puts 'Please insert your number(s) or press enter to continue '
+number = gets.chomp
+my_numbers.push(number)
+
+until number == ''
+  puts 'Ingrese otro número or press enter to continue!'
+  number = gets.chomp
+  my_numbers.push(number)
+end
+
+my_numbers.delete_at(-1)
