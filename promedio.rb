@@ -13,7 +13,6 @@
 
 def solve
   my_numbers = []
-
   puts 'Please insert your number(s) or press enter to continue '
   number = gets.chomp
   my_numbers.push(number)
@@ -23,13 +22,8 @@ def solve
     number = gets.chomp
     my_numbers.push(number)
   end
-
   my_numbers.delete_at(-1)
-
-  nominator = my_numbers.inject(0) { |result, element| result.to_i + element.to_i }
-  denominator = my_numbers.length
-  average = nominator/denominator
-
+  average = (my_numbers.inject(0) { |result, element| result.to_i + element.to_i }/my_numbers.length)
 end
 
 puts solve
