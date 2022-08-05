@@ -7,6 +7,3 @@ class Store < Incident
   end
 
 end
-
-new_store = Store.new
-p new_store
